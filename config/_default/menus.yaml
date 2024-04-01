@@ -11,8 +11,11 @@ main:
     url: people
     weight: 10
   - name: Projects
-    url: project
     weight: 20
+    hasChildren: true
+  - parent: Projects
+    name: project
+    url: project/
   # - name: News
   #   url: post
   #   weight: 20
