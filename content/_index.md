@@ -8,16 +8,16 @@ sections:
   - block: hero
     content:
       title: |
-        Vision and Language Group@CFM
+        Vision and Language Group
       image:
         filename: welcome.jpg
       text: |
         <br>
         
-        Our team Vision and Language Group@CFM is directed by Lianli Gao and JingKuan Song, which is affiliated with CFM.
+        Our team **Vision and Language Group** is directed by Lianli Gao and JingKuan Song, which is affiliated with CFM.
         Our researching intersts are as follows:
-        - Artificial Intelligence Generated Content (AIGC)
-        - Human-Centric Perceptions (HCP)
+        - Vision Generation (VGG)
+        - Human Analysis (HAG)
   
   - block: portfolio
     content:
@@ -35,10 +35,10 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Artificial Intelligence Generated Content
-          tag: AIGC
-        - name: Human-Centric Perceptions
-          tag: HCP
+        - name: VGG
+          tag: VGG
+        - name: HAG
+          tag: HAG
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
