@@ -21,7 +21,7 @@ main:
     url: hag
   - name: News
     url: post
-    weight: 20
+    weight: 30
   # - name: Events
   #   url: event
   #   weight: 40
