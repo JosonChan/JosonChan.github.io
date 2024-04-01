@@ -8,17 +8,15 @@ sections:
   - block: hero
     content:
       title: |
-        Wowchemy
-        Research Group
+        Vision and Language Group@CFM
       image:
         filename: welcome.jpg
       text: |
         <br>
         
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        Our team Vision and Language Group@CFM is directed by Lianli Gao and JingKuan Song, which is affiliated with CFM. Our researching intersts are mainly about Artificial Intelligence Generated Content and Human-Centric Perceptions.
   
   - block: portfolio
-    # id: project
     content:
       title: Projects
       filters:
@@ -34,10 +32,10 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
-        - name: Other
-          tag: Demo
+        - name: Artificial Intelligence Generated Content
+          tag: AIGC
+        - name: Human-Centric Perceptions
+          tag: HCP
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
