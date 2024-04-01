@@ -14,7 +14,10 @@ sections:
       text: |
         <br>
         
-        Our team Vision and Language Group@CFM is directed by Lianli Gao and JingKuan Song, which is affiliated with CFM. Our researching intersts are mainly about Artificial Intelligence Generated Content and Human-Centric Perceptions.
+        Our team Vision and Language Group@CFM is directed by Lianli Gao and JingKuan Song, which is affiliated with CFM.
+        Our researching intersts are as follows:
+        - Artificial Intelligence Generated Content (AIGC)
+        - Human-Centric Perceptions (HCP)
   
   - block: portfolio
     content:
