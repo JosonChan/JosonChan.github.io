@@ -15,10 +15,10 @@ main:
     hasChildren: true
   - parent: Projects
     name: VGG
-    url: project/
+    url: project_vgg/
   - parent: Projects
     name: HAG
-    url: project/
+    url: project_hag/
   # - name: News
   #   url: post
   #   weight: 20
