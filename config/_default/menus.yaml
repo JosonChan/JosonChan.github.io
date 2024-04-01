@@ -10,24 +10,24 @@ main:
   - name: People
     url: people
     weight: 10
-  - name: Projects
+  - name: Research
     weight: 20
     hasChildren: true
-  - parent: Projects
+  - parent: Research
     name: VGG
-    url: project_vgg
-  - parent: Projects
+    url: vgg
+  - parent: Research
     name: HAG
-    url: project_hag
-  # - name: News
-  #   url: post
-  #   weight: 20
+    url: hag
+  - name: News
+    url: post
+    weight: 20
   # - name: Events
   #   url: event
   #   weight: 40
-  - name: Publications
-    url: publication
-    weight: 30
+  # - name: Publications
+  #   url: publication
+  #   weight: 30
   - name: Contact
     url: contact
     weight: 40
