@@ -35,9 +35,9 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: AIGC
+        - name: Artificial Intelligence Generated Content
           tag: AIGC
-        - name: HCP
+        - name: Human-Centric Perceptions
           tag: HCP
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
