@@ -2,5 +2,5 @@
 title: HAG Projects
 
 # Listing view
-view: showcase
+view: compact
 ---
