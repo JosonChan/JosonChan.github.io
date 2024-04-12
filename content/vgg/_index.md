@@ -2,5 +2,6 @@
 title: VGG Projects
 
 # Listing view
-view: card
+view: showcase
+columns: '1'
 ---
