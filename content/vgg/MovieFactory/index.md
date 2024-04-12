@@ -14,9 +14,9 @@ links:
     name: Follow
     url: https://twitter.com/georgecushen
 url_code: ''
-url_pdf: 'https://arxiv.org/abs/2306.07257'
+url_pdf: https://arxiv.org/abs/2306.07257
 url_slides: ''
-url_video: 'https://www.youtube.com/watch?v=tvDknhMFhzk'
+url_video: https://www.youtube.com/watch?v=tvDknhMFhzk
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
