@@ -27,7 +27,7 @@ url_demo: ''
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
+slides: ''
 ---
 
 Face aging and rejuvenation is applied to predict what a person looks like at different ages. While prior work brought about a significant progress in this topic, there are two central problems remaining to be solved : 1) most prior works require sequential data during training, while it is very rare in

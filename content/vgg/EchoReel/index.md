@@ -27,7 +27,7 @@ url_demo: https://liujianzhi.github.io/EchoReel-demo/
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
+slides: ''
 ---
 
 Recent large-scale video datasets have facilitated the generation of diverse open-domain videos of Video Diffusion Models (VDMs). Nonetheless, the efficacy of VDMs in assimilating complex knowledge from these datasets remains constrained by their inherent scale, leading to suboptimal comprehension and synthesis of numerous actions. In this paper, we introduce EchoReel, a novel approach to augment the capability of VDMs in generating intricate actions by emulating motions
