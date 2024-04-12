@@ -2,5 +2,9 @@
 title: VGG Projects
 
 # Listing view
-# view: card
+view: compact
+
+banner:
+  caption: ''
+  image: ''
 ---
