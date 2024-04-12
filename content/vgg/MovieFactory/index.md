@@ -8,15 +8,16 @@ date: '2024-04-12T00:00:00Z'
 # Optional external URL for project (replaces project detail page).
 external_link: ''
 
-links:
-  - icon: twitter
-    icon_pack: fab
-    name: Follow
-    url: https://twitter.com/georgecushen
+# links:
+#   - icon: twitter
+#     icon_pack: fab
+#     name: Follow
+#     url: https://twitter.com/georgecushen
 url_code: ''
 url_pdf: https://arxiv.org/abs/2306.07257
 url_slides: ''
 url_video: https://www.youtube.com/watch?v=tvDknhMFhzk
+url_demo: ''
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
