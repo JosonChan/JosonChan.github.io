@@ -9,8 +9,7 @@ date: '2024-04-12T00:00:00Z'
 external_link: ''
 
 image:
-  placement: 1
-  focal_point: Center
+  focal_point: Smart
 
 # links:
 #   - icon: twitter
