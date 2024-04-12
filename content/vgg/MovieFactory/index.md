@@ -8,6 +8,9 @@ date: '2024-04-12T00:00:00Z'
 # Optional external URL for project (replaces project detail page).
 external_link: ''
 
+image:
+  focal_point: Smart
+
 # links:
 #   - icon: twitter
 #     icon_pack: fab
