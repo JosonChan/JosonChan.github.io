@@ -14,16 +14,15 @@ external_link: ''
 image:
   focal_point: Right
 
-# links:
-#   - icon: twitter
-#     icon_pack: fab
-#     name: Follow
-#     url: https://twitter.com/georgecushen
+links:
+  - icon: github
+    icon_pack: fab
+    name: demo
+    url: https://liujianzhi.github.io/EchoReel-demo/
 url_code: https://github.com/liujianzhi/EchoReel
 url_pdf: https://arxiv.org/abs/2403.11535
 url_slides: ''
 url_video: ''
-url_demo: https://liujianzhi.github.io/EchoReel-demo/
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
