@@ -15,7 +15,7 @@ image:
   focal_point: Right
 
 links:
-  - icon: github
+  - icon:
     icon_pack: fab
     name: demo
     url: https://liujianzhi.github.io/EchoReel-demo/
