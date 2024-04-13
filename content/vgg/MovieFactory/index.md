@@ -3,7 +3,7 @@ title: MovieFactory
 summary: Automatic Movie Creation from Text using Large Generative Models for Language and Images
 tags:
   - VGG
-date: '2024-04-12T00:00:00Z'
+date: '2023-07-12T00:00:00Z'
 profile: false
 share: false
 

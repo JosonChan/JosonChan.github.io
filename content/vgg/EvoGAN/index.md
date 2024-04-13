@@ -3,7 +3,7 @@ title: EvoGAN
 summary: An Evolutionary GAN for Face Aging and Rejuvenation
 tags:
   - VGG
-date: '2024-04-12T00:00:00Z'
+date: '2021-05-03T00:00:00Z'
 profile: false
 share: false
 

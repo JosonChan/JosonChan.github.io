@@ -3,7 +3,7 @@ title: AgeGAN++
 summary: Face Aging and Rejuvenation With Dual Conditional GANs
 tags:
   - VGG
-date: '2024-04-12T00:00:00Z'
+date: '2021-02-15T00:00:00Z'
 profile: false
 share: false
 
