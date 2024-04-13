@@ -4,6 +4,7 @@ summary: Automatic Movie Creation from Text using Large Generative Models for La
 tags:
   - VGG
 date: '2024-04-12T00:00:00Z'
+profile: false
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
