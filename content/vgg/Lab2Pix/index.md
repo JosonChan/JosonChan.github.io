@@ -19,7 +19,7 @@ image:
 #     icon_pack: fab
 #     name: Follow
 #     url: https://twitter.com/georgecushen
-url_code: 'https://github.com/RoseRollZhu/Lab2Pix'
+url_code: https://github.com/RoseRollZhu/Lab2Pix
 url_pdf: https://ieeexplore.ieee.org/document/9810175
 url_slides: ''
 url_video: ''

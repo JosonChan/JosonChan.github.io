@@ -19,7 +19,7 @@ image:
 #     icon_pack: fab
 #     name: Demo
 #     url: https://litaoguo.github.io/Make-A-Storyboard.github.io/
-url_code: 'https://github.com/sitongsu/MGD_GAN'
+url_code: https://github.com/sitongsu/MGD_GAN
 url_pdf: https://www.ijcai.org/proceedings/2021/0139.pdf
 url_slides: ''
 url_video: ''
