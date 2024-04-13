@@ -1,5 +1,5 @@
 ---
-title: AgeGAN++
+title: AgeGAN++ (TMM)
 summary: Face Aging and Rejuvenation With Dual Conditional GANs
 tags:
   - VGG

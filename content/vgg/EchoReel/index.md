@@ -1,5 +1,5 @@
 ---
-title: EchoReel
+title: EchoReel (arXiv)
 summary: Enhancing Action Generation of Existing Video Diffusion Models
 tags:
   - VGG

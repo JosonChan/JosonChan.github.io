@@ -1,5 +1,5 @@
 ---
-title: EvoGAN
+title: EvoGAN (ACM MM)
 summary: An Evolutionary GAN for Face Aging and Rejuvenation
 tags:
   - VGG

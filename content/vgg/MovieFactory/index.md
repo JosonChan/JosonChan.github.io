@@ -1,5 +1,5 @@
 ---
-title: MovieFactory
+title: MovieFactory (MMBNI)
 summary: Automatic Movie Creation from Text using Large Generative Models for Language and Images
 tags:
   - VGG
