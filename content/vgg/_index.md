@@ -3,10 +3,9 @@ title:
 
 # Listing view
 type: landing
-weight: 20
 
 sections:
-  - block: project
+  - block: portfolio
     content:
       title: VGG Research
       filters:
@@ -31,7 +30,7 @@ sections:
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
-      view: Masonry
+      view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
 ---
