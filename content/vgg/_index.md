@@ -5,7 +5,7 @@ title:
 type: landing
 
 sections:
-  - block: portfolio
+  - block: project
     content:
       title: VGG Research
       filters:
