@@ -19,6 +19,18 @@ main:
   - parent: Research
     name: HAG
     url: hag
+  - parent: Research
+    name: FSG
+    url: fsg
+  - parent: Research
+    name: CMG
+    url: cmg
+  - parent: Research
+    name: CRG
+    url: crg
+  - parent: Research
+    name: AADG
+    url: aadg
   - name: News
     url: post
     weight: 30
