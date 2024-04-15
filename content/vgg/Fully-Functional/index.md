@@ -2,7 +2,7 @@
 title: Fully Functional (ACM MM)
 summary: Fully Functional Image Manipulation Using Scene Graphs in A Bounding-Box Free Way
 tags:
-  - VGG
+  - GAN
 date: '2021-10-17T00:00:00Z'
 profile: false
 share: false

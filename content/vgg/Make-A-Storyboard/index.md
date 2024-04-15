@@ -2,7 +2,7 @@
 title: Make-A-Storyboard (arXiv)
 summary: A General Framework for Storyboard with Disentangled and Merged Control 
 tags:
-  - VGG
+  - Text-to-Image
 date: '2023-12-06T00:00:00Z'
 profile: false
 share: false

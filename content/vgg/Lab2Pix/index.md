@@ -2,7 +2,7 @@
 title: Lab2Pix (TPAMI)
 summary: Label-Guided Generative Adversarial Network for Realistic Image Synthesis
 tags:
-  - VGG
+  - GAN
 date: '2022-06-28T00:00:00Z'
 profile: false
 share: false

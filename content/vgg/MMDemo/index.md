@@ -2,7 +2,7 @@
 title: MobileVidFactory (ACM MM-Demo)
 summary: Automatic Diffusion-Based Social Media Video Generation for Mobile Devices from Text
 tags:
-  - VGG
+  - Text-to-Video
 date: '2023-07-31T00:00:00Z'
 profile: false
 share: false

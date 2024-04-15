@@ -2,7 +2,7 @@
 title: SVC (ICME)
 summary: TRAINING-FREE SEMANTIC VIDEO COMPOSITION VIA PRE-TRAINED DIFFUSION MODEL
 tags:
-  - VGG
+  - Text-to-Video
 date: '2024-07-17T00:00:00Z'
 profile: false
 share: false

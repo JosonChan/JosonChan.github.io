@@ -2,7 +2,7 @@
 title: EchoReel (arXiv)
 summary: Enhancing Action Generation of Existing Video Diffusion Models
 tags:
-  - VGG
+  - Text-to-Video
 date: '2024-03-18T00:00:00Z'
 profile: false
 share: false
