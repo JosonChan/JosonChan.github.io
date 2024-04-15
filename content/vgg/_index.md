@@ -3,6 +3,7 @@ title:
 
 # Listing view
 type: landing
+weight: 20
 
 sections:
   - block: project
