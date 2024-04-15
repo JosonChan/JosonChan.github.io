@@ -18,6 +18,10 @@ sections:
         Our researching intersts are as follows:
         - Vision Generation (VGG)
         - Human Analysis (HAG)
+        - Few Shot Learning (FSG)
+        - MultiModel Learning (CMG)
+        - Compact Representation (CRG)
+        - Adversarial Attack and Defense (AADG)
   
   - block: portfolio
     content:
