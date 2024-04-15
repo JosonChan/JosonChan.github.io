@@ -19,9 +19,9 @@ main:
   - parent: Research
     name: HAG
     url: hag
-  # - name: News
-  #   url: post
-  #   weight: 30
+  - name: News
+    url: post
+    weight: 30
   # - name: Events
   #   url: event
   #   weight: 40
@@ -30,4 +30,4 @@ main:
   #   weight: 40
   - name: Contact
     url: contact
-    weight: 30
+    weight: 40
