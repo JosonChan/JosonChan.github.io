@@ -1,12 +1,12 @@
 ---
-title: VGG
-summary: Vision Generation Group.
+title: CMG
+summary: MultiModel Learning Group.
 tags:
-  - VGG
+  - CMG
 date: '2016-04-27T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
-external_link: 'https://josonchan.github.io/vgg/'
+external_link: 'https://josonchan.github.io/cmg/'
 
 image:
   caption: Photo by rawpixel on Unsplash
