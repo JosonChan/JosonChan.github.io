@@ -27,23 +27,24 @@ url_video: ''
 #   Otherwise, set `slides = ""`.
 slides: example
 
-- block: portfolio
-  content:
-    title: |
-      <br> VGG Research themes
-    text: |
-      <br>
-    filters:
-      folders:
-        - research_vgg_themes
-  design:
-    # Choose how many columns the section has. Valid values: '1' or '2'.
-    columns: '1'
-    view: masonry
-    # For Showcase view, flip alternate rows?
-    flip_alt_rows: true
-    background: {}
-    spacing: {padding: [0, 0, 0, 0]}
+sections:
+  - block: portfolio
+    content:
+      title: |
+        <br> VGG Research themes
+      text: |
+        <br>
+      filters:
+        folders:
+          - research_vgg_themes
+    design:
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '1'
+      view: masonry
+      # For Showcase view, flip alternate rows?
+      flip_alt_rows: true
+      background: {}
+      spacing: {padding: [0, 0, 0, 0]}
 
 ---
 
