@@ -6,7 +6,7 @@ tags:
 date: '2016-04-27T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
-external_link: 'https://josonchan.github.io/fsg/'
+external_link: 'https://josonchan.github.io/research/fsg/'
 
 image:
   caption: Photo by rawpixel on Unsplash
