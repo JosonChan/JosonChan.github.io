@@ -8,8 +8,8 @@ type: landing
 sections:
   - block: portfolio
     content:
-      title: 'VGG Research theme'
-      text: 'Hello world!'
+      title: <br> VGG Research theme
+      text: <br> Hello world!
       filters:
         folders:
           - research_vgg_themes
