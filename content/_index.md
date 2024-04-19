@@ -26,6 +26,8 @@ sections:
   - block: portfolio
     content:
       title: |
+        <br>
+
         Research themes
       text: |
         <br>
