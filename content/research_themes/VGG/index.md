@@ -1,18 +1,15 @@
 ---
 # Leave the homepage title empty to use the site title
-title: VGG Research
+title: VGG
 date: '2016-04-27T00:00:00Z'
 summary: Vision Generation Group.
-image:
-  caption: Photo by rawpixel on Unsplash
-  focal_point: Smart
-text: ''
 
 type: landing
 sections:
   - block: portfolio
     content:
-      title:
+      title: 'VGG Research theme'
+      text: 'Hello world!'
       filters:
         folders:
           - research_vgg_themes
