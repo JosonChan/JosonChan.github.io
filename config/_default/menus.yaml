@@ -10,36 +10,36 @@ main:
   - name: People
     url: people
     weight: 10
-  - name: Research
-    url: publication
-    weight: 20
-  - name: Publications
-    weight: 30
-    hasChildren: true
-  - parent: Publications
-    name: VGG
-    url: vgg
-  - parent: Publications
-    name: HAG
-    url: hag
-  - parent: Publications
-    name: FSG
-    url: fsg
-  - parent: Publications
-    name: CMG
-    url: cmg
-  - parent: Publications
-    name: CRG
-    url: crg
-  - parent: Publications
-    name: AADG
-    url: aadg
+  # - name: Research
+  #   url: research
+  #   weight: 20
+  # - name: Publications
+  #   weight: 30
+  #   hasChildren: true
+  # - parent: Publications
+  #   name: VGG
+  #   url: vgg
+  # - parent: Publications
+  #   name: HAG
+  #   url: hag
+  # - parent: Publications
+  #   name: FSG
+  #   url: fsg
+  # - parent: Publications
+  #   name: CMG
+  #   url: cmg
+  # - parent: Publications
+  #   name: CRG
+  #   url: crg
+  # - parent: Publications
+  #   name: AADG
+  #   url: aadg
   - name: News
     url: post
-    weight: 40
+    weight: 20
   # - name: Events
   #   url: event
   #   weight: 40
   - name: Contact
     url: contact
-    weight: 50
+    weight: 30
