@@ -11,27 +11,24 @@ main:
     url: people
     weight: 10
   # - name: Research
-  #   url: research
   #   weight: 20
-  # - name: Publications
-  #   weight: 30
   #   hasChildren: true
-  # - parent: Publications
+  # - parent: Research
   #   name: VGG
   #   url: vgg
-  # - parent: Publications
+  # - parent: Research
   #   name: HAG
   #   url: hag
-  # - parent: Publications
+  # - parent: Research
   #   name: FSG
   #   url: fsg
-  # - parent: Publications
+  # - parent: Research
   #   name: CMG
   #   url: cmg
-  # - parent: Publications
+  # - parent: Research
   #   name: CRG
   #   url: crg
-  # - parent: Publications
+  # - parent: Research
   #   name: AADG
   #   url: aadg
   - name: News
