@@ -10,7 +10,7 @@ sections:
       title: FSG Research
       filters:
         folders:
-          - fsg
+          - research/fsg
       # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
       # default_button_index: 0
       # Filter toolbar (optional).
