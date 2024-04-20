@@ -10,7 +10,7 @@ sections:
       title: VGG Research
       filters:
         folders:
-          - research_vgg
+          - project_vgg
       # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
       default_button_index: 0
       # Filter toolbar (optional).
@@ -30,9 +30,9 @@ sections:
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
-      view: masonry
+      view: showcase
       # For Showcase view, flip alternate rows?
-      flip_alt_rows: true
-      background: {}
-      spacing: {padding: [0, 0, 0, 0]}
+      # flip_alt_rows: true
+      # background: {}
+      # spacing: {padding: [0, 0, 0, 0]}
 ---

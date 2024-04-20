@@ -26,7 +26,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="../project_vgg/" cta_text="Meet the project →" %}}
+        {{% cta cta_link="../../project_vgg/" cta_text="Meet the project →" %}}
     design:
       columns: '1'
 ---
