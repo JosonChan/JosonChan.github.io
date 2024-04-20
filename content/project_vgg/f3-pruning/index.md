@@ -2,7 +2,7 @@
 title: F3_Pruning (AAAI)
 summary: A Training-Free and Generalized Pruning Strategy towards Faster and Finer Text-to-Video Synthesis
 tags:
-  - Text-to-Video
+  - Video
 date: '2023-12-06T00:00:00Z'
 profile: false
 share: false

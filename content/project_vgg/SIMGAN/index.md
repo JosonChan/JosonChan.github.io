@@ -2,7 +2,7 @@
 title: SIMGAN (TMM)
 summary: Structuring Image for Text-to-Image Attributes Manipulation
 tags:
-  - GAN
+  - Image
 date: '2022-11-04T00:00:00Z'
 profile: false
 share: false

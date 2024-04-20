@@ -21,12 +21,12 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Text-to-Video
-          tag: Text-to-Video
-        - name: Text-to-Image
-          tag: Text-to-Image
-        - name: GAN
-          tag: GAN
+        - name: Image
+          tag: Image
+        - name: Video
+          tag: Video
+        - name: 3D
+          tag: 3D
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'

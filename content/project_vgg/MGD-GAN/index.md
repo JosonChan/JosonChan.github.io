@@ -2,7 +2,7 @@
 title: MGD-GAN (IJCAI)
 summary: Towards Unspervised Deformable-Instances Image-to-Image Translation
 tags:
-  - GAN
+  - Image
 date: '2021-12-06T00:00:00Z'
 profile: false
 share: false

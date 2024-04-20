@@ -2,7 +2,7 @@
 title: MotionZero (arXiv)
 summary: Exploiting Motion Priors for Zero-shot Text-to-Video Generation
 tags:
-  - Text-to-Video
+  - Video
 date: '2023-11-28T00:00:00Z'
 profile: false
 share: false

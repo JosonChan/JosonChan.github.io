@@ -2,7 +2,7 @@
 title: MovieFactory (MMBNI)
 summary: Automatic Movie Creation from Text using Large Generative Models for Language and Images
 tags:
-  - Text-to-Video
+  - Video
 date: '2023-07-12T00:00:00Z'
 profile: false
 share: false

@@ -2,7 +2,7 @@
 title: Greedy Nature (TMM)
 summary: Utilizing Greedy Nature for Multimodal Conditional Image Synthesis in Transformers
 tags:
-  - Text-to-Image
+  - Image
 date: '2023-07-17T00:00:00Z'
 profile: false
 share: false
