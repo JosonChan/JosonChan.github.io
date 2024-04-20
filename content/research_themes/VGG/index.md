@@ -2,14 +2,14 @@
 # Leave the homepage title empty to use the site title
 title: VGG
 date: '2016-04-27T00:00:00Z'
-summary: Vision Generation Group.
+summary: To pioneer advanced visual generation technologies that seamlessly blend creativity with artificial intelligence.
 
 type: landing
 sections:
   - block: portfolio
     content:
       title: <br> VGG Research Themes
-      text: ''
+      text: 'We are a group of visual generation researchers who are interested in visual content creation (one of the most important parts in AIGC), which can leverage the full power of human creativity in artificial intelligence. We aim to study cutting-edge technologies and bring them to the advanced models for the greatest quality show and application. Our researches cover image, video, and 3D generation and editing with a serious of state-of-the-art models published on IEEE TPAMI, ACM MM, AAAI etc.'
       filters:
         folders:
           - research_vgg_themes
@@ -26,7 +26,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="../../project_vgg/" cta_text="Meet the project →" %}}
+        {{% cta cta_link="../../project_vgg/" cta_text="View our publications →" %}}
     design:
       columns: '1'
 ---
