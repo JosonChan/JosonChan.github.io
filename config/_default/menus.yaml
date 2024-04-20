@@ -10,33 +10,33 @@ main:
   - name: People
     url: people
     weight: 10
-  # - name: Research
-  #   weight: 20
-  #   hasChildren: true
-  # - parent: Research
-  #   name: VGG
-  #   url: vgg
-  # - parent: Research
-  #   name: HAG
-  #   url: hag
-  # - parent: Research
-  #   name: FSG
-  #   url: fsg
-  # - parent: Research
-  #   name: CMG
-  #   url: cmg
-  # - parent: Research
-  #   name: CRG
-  #   url: crg
-  # - parent: Research
-  #   name: AADG
-  #   url: aadg
+  - name: Project
+    weight: 20
+    hasChildren: true
+  - parent: Project
+    name: VGG
+    url: project_vgg
+  - parent: Project
+    name: HAG
+    url: project_hag
+  - parent: Project
+    name: FSG
+    url: project_fsg
+  - parent: Project
+    name: CMG
+    url: project_cmg
+  - parent: Project
+    name: CRG
+    url: project_crg
+  - parent: Project
+    name: AADG
+    url: project_aadg
   - name: News
     url: post
-    weight: 20
+    weight: 30
   # - name: Events
   #   url: event
   #   weight: 40
   - name: Contact
     url: contact
-    weight: 30
+    weight: 40
