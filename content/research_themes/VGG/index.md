@@ -6,9 +6,10 @@ summary: To pioneer advanced visual generation technologies that seamlessly blen
 
 type: landing
 sections:
-  - block: hero
+  - block: markdown
     content:
       title: VGG
+      subtitle: To pioneer advanced visual generation technologies that seamlessly blend creativity with artificial intelligence.
       text: <br>
             We are a group of visual generation researchers who are interested in visual content creation (one of the most important parts in AIGC), which can leverage the full power of human creativity in artificial intelligence. We aim to study cutting-edge technologies and bring them to the advanced models for the greatest quality show and application. Our researches cover image, video, and 3D generation and editing with a serious of state-of-the-art models published on IEEE TPAMI, ACM MM, AAAI etc.
 
