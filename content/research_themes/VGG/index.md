@@ -8,8 +8,8 @@ type: landing
 sections:
   - block: portfolio
     content:
-      title: <br> VGG Research theme
-      text: <br> Hello world!
+      title: <br> VGG Research Themes
+      text: <br> Hello world! <br>
       filters:
         folders:
           - research_vgg_themes
@@ -21,4 +21,12 @@ sections:
       flip_alt_rows: true
       background: {}
       spacing: {padding: [0, 0, 0, 0]}
+  - block: markdown
+    content:
+      title:
+      subtitle:
+      text: |
+        {{% cta cta_link="./project_vgg/" cta_text="Meet the project →" %}}
+    design:
+      columns: '1'
 ---
