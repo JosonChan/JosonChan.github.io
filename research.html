@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="keywords" content="Chen Change Loy, Ziwei Liu, Bo Dai, Yixin Cao, Super-resolution, Deep Learning, Computer Vision, Convolutional Neural Network, Enhancement, Inpainting, Knowledge Distillation, Restoration, GAN, Generative Adversarial Networks, Generation, Manipulation, Editing, Object Detection, Segmentation, Recognition, Continual Learning, Domain Generalization, Self-Supervised Learning, Singapore, NTU, Nanyang Technological University, SCSE" />
+        
+        <!-- Page Title -->
+        <title>Research | VLLab@UESTC</title>
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#f23838">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Vendor Stylesheets -->
+        <link href="nopathsource/f4dbc32851b099af1b2b4cb6ee659f11" rel="stylesheet">
+        <link href="assets/vendor/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <!-- <link href="./assets/vendor/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet"> -->
+        <link href="assets/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
+        <!-- <link href="assets/vendor/aos/dist/aos.css" rel="stylesheet"> -->
+
+        <!-- Theme Stylesheets -->
+        <link href="assets/css/theme.css" rel="stylesheet">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="nopathsource/8682f3dbb2db006e1ba53d83b7e3ba44"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-22940424-1');
+        </script>
+    </head>
+
+    <body>
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="spinner">
+                <div class="circles"></div>
+            </div>
+        </div>
+        <!-- End of Preloader -->
+
+
+        <!-- Header -->
+        <header class="spyre-navbar navbar navbar-expand-lg bg-dark navbar-dark fixed-top align-items-center" data-text-color="#ffffff">
+            <div class="container">
+                <a class="navbar-brand mr-lg-5 mr-xl-7" href="index.html">
+                    <img src="assets/img/logo.png" class="d-none d-lg-block" alt="MMLab" width="100" />
+                    <img src="assets/img/logo.png" class="d-block d-lg-none" alt="MMLab" width="150" />
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="pl-10 nav-item navbar-text"><a href="index.html" class="nav-link text-400">Home</a></li>
+                        <li class="pl-5 nav-item navbar-text"><a href="team.html" class="nav-link text-400">Team</a></li>
+                        <li class="pl-5 nav-item navbar-text"><a href="research.html" class="nav-link">Research</a></li>
+                        <li class="pl-5 nav-item navbar-text"><a href="publication_topic.html" class="nav-link text-400">Publications</a></li>
+                        <!-- <li class="pl-5 nav-item navbar-text"><a href="downloads.html" class="nav-link text-400">Code | Datasets</a></li>
+                        <li class="pl-5 nav-item navbar-text"><a href="careers.html" class="nav-link text-400">Join Us</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="menu-toggle d-block d-lg-none">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="cross">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spyrenav Overlay -->
+            <div class="spyre-navbar-overlay overlay-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="spyre-navbar-nav-container col-md-6 col-lg-5 col-xl-4 bg-white ext-l">
+                            <nav class="spyre-navbar-nav">
+                                <ul class="spyre-nav">
+                                    <li class="spyre-nav-item"><a href="index.html" class="spyre-nav-link">Home</a></li>
+                                    <li class="spyre-nav-item"><a href="research.html" class="spyre-nav-link">Our Research</a></li>
+                                    <li class="spyre-nav-item"><a href="team.html" class="spyre-nav-link">Team</a></li>
+                                    <li class="spyre-nav-item dropdown">
+                                        <a href="#" class="spyre-nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publications</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li class="dropdown-menu-item"><a href="publication_topic.html" class="dropdown-menu-link">By Topic</a></li>
+                                            <li class="dropdown-menu-item"><a href="publication_year.html" class="dropdown-menu-link">By Year</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="spyre-nav-item"><a href="downloads.html" class="spyre-nav-link">Code and Datasets</a></li>
+                                    <li class="spyre-nav-item"><a href="careers.html" class="spyre-nav-link">Join Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+        
+                        <div class="col-lg-7 col-xl-8 d-none d-md-block">
+                            <div class="d-flex flex-column h-100">
+                                <div class="d-flex h-100">
+                                    <div class="align-self-center">
+                                        <div class="text-uppercase"
+                                            data-background-text="computer vision"
+                                            data-color="#7079a2"
+                                            data-opacity="0.02"
+                                            data-font-size="85px"
+                                            data-font-weight="500"
+                                            data-offset-x="-5%"
+                                            data-letter-spacing="5px"
+                                        ></div>
+                                        <div class="text-uppercase"
+                                            data-background-text="mmlab"
+                                            data-color="#7079a2"
+                                            data-opacity="0.04"
+                                            data-font-size="175px"
+                                            data-font-weight="500"
+                                            data-offset-x="29%"
+                                            data-padding="7vh 0 2vh 0"
+                                            data-letter-spacing="5px"
+                                        ></div>
+                                        <div class="text-uppercase"
+                                            data-background-text="deep learning"
+                                            data-color="#7079a2"
+                                            data-opacity="0.03"
+                                            data-font-size="140px"
+                                            data-font-weight="500"
+                                            data-offset-x="15%"
+                                            data-letter-spacing="5px"
+                                        ></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-auto">
+                                    <ul class="nav flex-nowrap float-right">
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2" href="https://twitter.com/MMLabNTU" target="_blank">
+                                                <i class="zmdi zmdi-twitter text-white"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Spyrenav Overlay -->
+        </header>
+        <!-- End of Header -->
+
+
+        <!-- Main Content -->
+        <main class="main minh-100vh">
+            <!-- Section -->
+            <section class="py-0 overflow-hidden text-center">
+                <div class="bg-container overlay overlay-dark-60 parallax" data-rellax-percentage="0.5" style="background-image: url(./assets/img/backgrounds/bg-research.jpg)">
+                </div>
+                <div class="container">
+                    <div class="row h-50vh align-items-center">
+                        <div class="col">
+                            <h1 class="text-white text-uppercase fs-4 fs-lg-6">Our Research</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Section -->
+
+            <!-- Section -->
+            <section class="pb-0">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-6 mb-7 mb-lg-0">
+                            <h2 class="mb-4 fw-medium text-primary text-uppercase text-center text-lg-left">Our Research</h2>
+                            <!-- <h2 class="mb-5 fw-medium text-primary text-center text-lg-left">VLLab@UESTC</h2> -->
+                            <p class="mb-4 text-justify">Members in VLLab conduct research primarily in generative AI, multimedia understanding, human-centric understanding, security AI, quantization, and agent.
+                            </p>
+                            <div class="text-center text-lg-left">
+                                <a href="publication_topic.html" class="btn btn-primary btn-md mt-4 px-5">Publication<i class="zmdi zmdi-link ml-3"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="assets/img/backgrounds/bg-41.jpg" class="img-fluid w-100 mb-4 mb-lg-0" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Section -->
+
+            <!-- Section -->
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 mb-5">
+                                    <div class="d-flex flex-row" data-aos="fade-right">
+                                        <!-- <div>
+                                            <i class="zmdi zmdi-brush zmdi-hc-fw zmdi-hc-3x mr-1"></i>
+                                        </div> -->
+                                        <div
+                                            data-background-text="01"
+                                            data-color="#000000"
+                                            data-opacity="0.7"
+                                            data-font-size="30px"
+                                            data-font-weight="700"
+                                            data-offset-x="-1.5rem"
+                                            data-offset-y="-0.6rem"
+                                        ></div>
+                                        <div class="flex-shrink-1">
+                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase"><a href="publication_topic.html", style="color: #0f0f0f">generative AI</a> </h2>
+                                            <p class="fs--1 text-justify">Our team is the first to introduce the use of deep neural networks to directly predict super-resolved images. 
+                                                We are a group of visual generation researchers who are interested in visual content creation (one of the most important parts in AIGC), 
+                                                which can leverage the full power of human creativity in artificial intelligence. 
+                                                We aim to study cutting-edge technologies and bring them to the advanced models for the greatest quality show and application. 
+                                                Our researches cover image, video, and 3D generation and editing with a serious of state-of-the-art models published on IEEE TPAMI, ACM MM, AAAI etc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-5">
+                                    <div class="d-flex flex-row" data-aos="fade-left">
+                                        <!-- <div>
+                                            <i class="zmdi zmdi-collection-image zmdi-hc-fw zmdi-hc-3x mr-1"></i>
+                                        </div> -->
+                                        <div
+                                            data-background-text="02"
+                                            data-color="#000000"
+                                            data-opacity="0.7"
+                                            data-font-size="30px"
+                                            data-font-weight="700"
+                                            data-offset-x="-1.5rem"
+                                            data-offset-y="-0.6rem"
+                                        ></div>
+                                        <div class="flex-shrink-1">
+                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase"><a href="publication_topic.html", style="color: #0f0f0f">multimedia understanding</a></h2>
+                                            <p class="fs--1 text-justify">Our team is the first to introduce the use of deep neural networks to directly predict super-resolved images. 
+                                                We are a group of visual generation researchers who are interested in visual content creation (one of the most important parts in AIGC), 
+                                                which can leverage the full power of human creativity in artificial intelligence. 
+                                                We aim to study cutting-edge technologies and bring them to the advanced models for the greatest quality show and application. 
+                                                Our researches cover image, video, and 3D generation and editing with a serious of state-of-the-art models published on IEEE TPAMI, ACM MM, AAAI etc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-5">
+                                    <div class="d-flex flex-row" data-aos="fade-right">
+                                        <!-- <div>
+                                            <i class="zmdi zmdi-run zmdi-hc-fw zmdi-hc-3x mr-1"></i>
+                                        </div> -->
+                                        
+                                        <div
+                                            data-background-text="03"
+                                            data-color="#000000"
+                                            data-opacity="0.7"
+                                            data-font-size="30px"
+                                            data-font-weight="700"
+                                            data-offset-x="-1.5rem"
+                                            data-offset-y="-0.6rem"
+                                        ></div>
+
+                                        <div class="flex-shrink-1">
+                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase"><a href="publication_topic.html", style="color: #0f0f0f">human-centric understanding</a></h2>
+                                            <p class="fs--1 text-justify">Our team is the first to introduce the use of deep neural networks to directly predict super-resolved images. 
+                                                We are a group of visual generation researchers who are interested in visual content creation (one of the most important parts in AIGC), 
+                                                which can leverage the full power of human creativity in artificial intelligence. 
+                                                We aim to study cutting-edge technologies and bring them to the advanced models for the greatest quality show and application. 
+                                                Our researches cover image, video, and 3D generation and editing with a serious of state-of-the-art models published on IEEE TPAMI, ACM MM, AAAI etc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-5">
+                                    <div class="d-flex flex-row" data-aos="fade-left">
+                                        <!-- <div>
+                                            <i class="zmdi zmdi-shield-check zmdi-hc-fw zmdi-hc-3x mr-1"></i>
+                                        </div> -->
+                                        <div
+                                            data-background-text="04"
+                                            data-color="#000000"
+                                            data-opacity="0.7"
+                                            data-font-size="30px"
+                                            data-font-weight="700"
+                                            data-offset-x="-1.5rem"
+                                            data-offset-y="-0.6rem"
+                                        ></div>
+                                        <div class="flex-shrink-1">
+                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase"><a href="publication_topic.html", style="color: #0f0f0f">Security AI</a></h2>
+                                            <p class="fs--1 text-justify">Our team is the first to introduce the use of deep neural networks to directly predict super-resolved images. 
+                                                We are a group of visual generation researchers who are interested in visual content creation (one of the most important parts in AIGC), 
+                                                which can leverage the full power of human creativity in artificial intelligence. 
+                                                We aim to study cutting-edge technologies and bring them to the advanced models for the greatest quality show and application. 
+                                                Our researches cover image, video, and 3D generation and editing with a serious of state-of-the-art models published on IEEE TPAMI, ACM MM, AAAI etc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-5 mb-lg-0">
+                                    <div class="d-flex flex-row" data-aos="fade-right">
+                                        <!-- <div>
+                                            <i class="zmdi zmdi-layers zmdi-hc-fw zmdi-hc-3x mr-1"></i>
+                                        </div> -->
+                                        <div
+                                            data-background-text="05"
+                                            data-color="#000000"
+                                            data-opacity="0.7"
+                                            data-font-size="30px"
+                                            data-font-weight="700"
+                                            data-offset-x="-1.5rem"
+                                            data-offset-y="-0.6rem"
+                                        ></div>
+                                        <div class="flex-shrink-1">
+                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase"><a href="publication_topic.html", style="color: #0f0f0f">Quantization</a></h2>
+                                            <p class="fs--1 text-justify">Our team is the first to introduce the use of deep neural networks to directly predict super-resolved images. 
+                                                We are a group of visual generation researchers who are interested in visual content creation (one of the most important parts in AIGC), 
+                                                which can leverage the full power of human creativity in artificial intelligence. 
+                                                We aim to study cutting-edge technologies and bring them to the advanced models for the greatest quality show and application. 
+                                                Our researches cover image, video, and 3D generation and editing with a serious of state-of-the-art models published on IEEE TPAMI, ACM MM, AAAI etc. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex flex-row" data-aos="fade-left">
+                                        <!-- <div>
+                                            <i class="zmdi zmdi-search zmdi-hc-fw zmdi-hc-3x mr-1"></i>
+                                        </div> -->
+                                        <div
+                                            data-background-text="06"
+                                            data-color="#000000"
+                                            data-opacity="0.7"
+                                            data-font-size="30px"
+                                            data-font-weight="700"
+                                            data-offset-x="-1.5rem"
+                                            data-offset-y="-0.6rem"
+                                        ></div>
+                                        <div class="flex-shrink-1">
+                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase"><a href="publication_topic.html", style="color: #0f0f0f">Agent</a></h2>
+                                            <p class="fs--1 text-justify">Our team is the first to introduce the use of deep neural networks to directly predict super-resolved images. 
+                                                We are a group of visual generation researchers who are interested in visual content creation (one of the most important parts in AIGC), 
+                                                which can leverage the full power of human creativity in artificial intelligence. 
+                                                We aim to study cutting-edge technologies and bring them to the advanced models for the greatest quality show and application. 
+                                                Our researches cover image, video, and 3D generation and editing with a serious of state-of-the-art models published on IEEE TPAMI, ACM MM, AAAI etc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- End of Section -->
+
+            <!-- Section -->
+            <!-- <section class="py-8 py-md-11 overflow-hidden">
+                <div class="bg-container parallax" data-rellax-percentage="0.5" style="background-image: url(./assets/img/images/basicvsr.jpg);"></div>
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <a data-fancybox href="https://www.youtube.com/watch?v=iIDml09CUc4" class="icon mx-auto align-items-center text"><i class="zmdi zmdi-play zmdi-hc-4x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- End of Section -->
+
+            <!-- Section -->
+            <!-- <section class="pt-6 py-0">
+                <div class="container">
+                    <h3 class="my-0 fs-1 fw-medium text-primary text-uppercase text-center text-lg-left">Research</h3>
+                    <h2 class="mb-5 mb-lg-0 fw-medium text-secondary text-uppercase text-center text-lg-left">Video Demos</h2>
+
+                    <div class="row">
+                        <div class="col-lg-3 order-lg-1">
+                            <div class="pb-3 py-lg-9" data-toggle="sticky">
+                                <h5 class="mb-4 text-uppercase text-600">Videos</h5>
+                                <ul class="mb-6 list-unstyled text-600">
+                                    <li class="mb-1"><a href="javascript:;" data-filter="*" class="text-600">All</a></li>
+                                    <li class="mb-1"><a href="javascript:;" data-filter=".enhance" class="text-600">Enhancement and Restoration</a></li>
+                                    <li class="mb-1"><a href="javascript:;" data-filter=".editing" class="text-600">Content Editing and Generation</a></li>
+                                    <li class="mb-1"><a href="javascript:;" data-filter=".2d" class="text-600">Image and Video Understanding</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <!-- <div class="col-lg-9 order-lg-2 py-6 py-lg-9 px-0">
+                            <div class="grid">
+                                <div class="row no-gutters mt-neg-3">
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item editing enhance">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=d3VDpkXlueI" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/codeformer.jpg" alt="codeformer" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>CodeFormer (<a href="https://huggingface.co/spaces/sczhou/CodeFormer" target="_blank">Hugging Face Demo</a>)</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item editing">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=0_OmVhDgYuY" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/vtoonify.jpg" alt="vtoonify" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>VToonify (<a href="https://huggingface.co/spaces/PKUWilliamYang/VToonify" target="_blank">Hugging Face Demo</a>)</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item 2d">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=r-YM4DGGAdE" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/otter.png" alt="scenedreamer" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Otter Chatbot (<a href="http://vlarena.opengvlab.com/" target="_blank">Demo</a>)</h6>
+                                    </div>
+                                    <div class="col-12 col-lg-8 p-3 grid-item editing">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=nIrb9hwsdcI" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/stylegan_human.jpg" alt="stylegan_human" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Human Image Generation (<a href="https://huggingface.co/spaces/hysts/StyleGAN-Human" target="_blank">Hugging Face Demo</a>)</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item editing">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=nEfSKL2_FoA" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/scenedreamer.jpg" alt="scenedreamer" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>SceneDreamer (<a href="https://huggingface.co/spaces/FrozenBurning/SceneDreamer" target="_blank">Hugging Face Demo</a>)</h6>
+                                    </div>
+                                    <div class="col-12 col-lg-8 p-3 grid-item editing">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=Q_lxIrV3UgE" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/humman.jpg" alt="humman" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>4D Human Sensing</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item editing">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=yKh4VORA_E0" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/text2human.jpg" alt="text2human" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Text2Human (<a href="https://huggingface.co/spaces/hysts/Text2Human" target="_blank">Hugging Face Demo</a>)</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item editing">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=YbXOcuMTzD8&t=6s" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/bailando.jpg" alt="bailando" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Dance Generation</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item editing">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=scZTu77jixI" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/pastiche_master.jpg" alt="pastiche_master" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Portrait Style Transfer (<a href="https://huggingface.co/spaces/hysts/DualStyleGAN" target="_blank">Hugging Face Demo</a>)</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item enhance">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=QfkJLDD2jCI" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/esrgan.jpg" alt="esrgan" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Anime Super-Resolution (Credit: <a href="https://www.youtube.com/channel/UCU4iOw6d0tdmBp3xOZGNUhA">Jan Bing</a>)</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item enhance">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=9uMcim5KEi8" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/final_fantasy.jpg" alt="final_fantasy" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Game Super-Resolution (Credit: <a href="https://www.youtube.com/channel/UCLhDFpAPh_Nf-bpZ8wTLvSQ">Snouz</a>)</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item editing">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=ZKMkQhkMXPI" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/talkedit.jpg" alt="talkedit" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Face Editing</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item enhance editing">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=8HkXZPcxK9c" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/dni.jpg" alt="dni" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Effect Interpolation</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item enhance">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=2bbujT-ZXr8" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/animeinterp.jpg" alt="animeinterp" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Anime Video Interpolation</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item editing">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=LIJPUsrwx5E" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/inpainting.jpg" alt="inpainting" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Video Inpainting</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item enhance">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=Mrjs_aNeEyQ">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/zerodce.jpg" alt="zerodce" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Low-Light Enhancement (<a href="https://huggingface.co/spaces/IanNathaniel/Zero-DCE" target="_blank">Hugging Face Demo</a>)</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item enhance editing">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=p7ToqtwfVko" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/gan_prior.jpg" alt="gan_prior" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Image Restoration and Manipulation</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item editing">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=Bz7ifJLYR8c" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/liteflownet.jpg" alt="liteflownet" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Optical Flow Estimation</h6>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 p-3 grid-item editing">
+                                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=tNPuAnvijQk" class="position-relative">
+                                            <img class="img-fluid w-100" src="assets/img/portfolio/talking_head.jpg" alt="talking_head" />
+                                            <span class="icon icon-sm position-absolute mt-neg-6 ml-3">
+                                                <i class="zmdi zmdi-play zmdi-hc-2x"></i>
+                                            </span>
+                                        </a>
+                                        <h6>Audio-Driven Face Reenactment</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- End of Section -->
+
+            <!-- Section -->
+            <!-- <section id="section-1" class="py-0">
+                <div class="container-fluid px-0">
+                    <div class="row no-gutters">
+                        <div class="col-md-6 py-6 py-lg-8 bg-blue-light overflow-hidden">
+                            <div class="row h-100 align-items-center">
+                                <div class="col px-5 px-lg-8 px-xl-10">
+                                    <h3 class="my-0 fs-1 fw-medium text-primary text-center text-lg-left">Selected</h3>
+                                    <h2 class="mb-4 fw-medium text-secondary text-center text-lg-left">Media Coverage | Blog</h2>
+                                    <ul class="mb-0 text-justify">
+                                        <li><a href="https://www.theverge.com/2019/4/18/18311287/ai-upscaling-algorithms-video-games-mods-modding-esrgan-gigapixel" target="_blank">Artificial Intelligence Is Helping Old Video Games Look Like New</a><br/>By James Vincent in The Verge</li>
+                                        <li><a href="https://www.engadget.com/meet-the-upscalers-star-wars-140000459.html" target="_blank">Meet the Upscalers</a><br/>By Daniel Cooper in Engadget</li>
+                                        <li><a href="https://www.pcgamer.com/ai-neural-networks-are-giving-final-fantasy-7-a-makeover/" target="_blank">AI Neural Networks Are Giving Final Fantasy 7 a Makeover</a><br/>By Fraser Brown in PC Gamer</li>
+                                        <li><a href="https://www.inputmag.com/gaming/ai-is-about-to-transform-the-future-past-of-video-games" target="_blank">AI Is About to Transform The Future (And Past) of Video Games</a><br/>By Aidan Moher in Input Mag</li>
+                                        <li><a href="https://sites.google.com/view/moguri-mod/home" target="_blank">Final Fantasy IX Recreated</a><br/>By Moguri Mod</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-8">
+                            <div class="bg-container" style="background-image: url(./assets/img/images/esrgan.jpg);"></div>
+                            <span class="position-absolute mt-neg-7 ml-3">
+                                <p class="text-white fs--1"><i>Source:</i> <a href="https://twitter.com/Luke_Aaron/status/1224293674105954309" target="_blank" class="text-white"><i>@Luke_Aaron</i></a></p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- End of Section --> 
+
+
+            <!-- Section -->
+            <!-- <section id="section-4">
+                <div class="container">
+                    <h3 class="my-0 fs-1 fw-medium text-primary text-uppercase text-center text-lg-left">Organized</h3>
+                    <h2 class="mb-5 fw-medium text-secondary text-center text-lg-left">Workshops | Tutorials</h2>
+                    
+                    <div class="row justify-content-left">
+                        <div class="col-lg-4 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="http://mipi-challenge.org/" target="_blank" class="mb-3 d-block position-relative">
+                                <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-dark rounded text-white">
+                                    <i class="fas fa-link fa-2x"></i>
+                                </div>
+                                <img src="assets/img/printscreens/mipi.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                            </a>
+                            <h4 class="text-center"><a href="http://mipi-challenge.org/" target="_blank" class="text-body">Mobile Intelligent Photography & Imaging Workshop, 2022-2023</a></h4>
+                        </div>
+                        <div class="col-lg-4 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://prompting-in-vision.github.io/" target="_blank" class="mb-3 d-block position-relative">
+                                <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-dark rounded text-white">
+                                    <i class="fas fa-link fa-2x"></i>
+                                </div>
+                                <img src="assets/img/backgrounds/bg-42.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                            </a>
+                            <h4 class="text-center"><a href="https://prompting-in-vision.github.io/" target="_blank" class="text-body">Tutorial on Prompting in Vision, 2023</a></h4>
+                        </div>
+                        <div class="col-lg-4 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="cvpr_ntu/seminar_2023/index.html" class="mb-3 d-block position-relative">
+                                <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-dark rounded text-white">
+                                    <i class="fas fa-link fa-2x"></i>
+                                </div>
+                                <img src="assets/img/printscreens/precvpr_ntu.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                            </a>
+                            <h4 class="text-center"><a href="cvpr_ntu/seminar_2023/index.html" class="text-body">Pre-CVPR@NTU 2023</a></h4>
+                        </div>
+                        <div class="col-lg-4 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://sense-human.github.io/" target="_blank" class="mb-3 d-block position-relative">
+                                <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-dark rounded text-white">
+                                    <i class="fas fa-link fa-2x"></i>
+                                </div>
+                                <img src="assets/img/backgrounds/bg-40.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                            </a>
+                            <h4 class="text-center"><a href="https://sense-human.github.io/" target="_blank" class="text-body">Workshop on Sensing, Understanding and Synthesizing Humans, 2019-2022</a></h4>
+                        </div>
+                        <div class="col-lg-4 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="openmmlab/workshop_2021/index.html" class="mb-3 d-block position-relative">
+                                <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-dark rounded text-white">
+                                    <i class="fas fa-link fa-2x"></i>
+                                </div>
+                                <img src="assets/img/printscreens/openmmlab_workshop.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                            </a>
+                            <h4 class="text-center"><a href="openmmlab/workshop_2021/index.html" class="text-body">OpenMMLab Workshop 2021</a></h4>
+                        </div>
+                        <div class="col-lg-4 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="https://wider-challenge.org/2019.html" target="_blank" class="mb-3 d-block position-relative">
+                                <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-dark rounded text-white">
+                                    <i class="fas fa-link fa-2x"></i>
+                                </div>
+                                <img src="assets/img/printscreens/widerface.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                            </a>
+                            <h4 class="text-center"><a href="https://wider-challenge.org/2019.html" target="_blank" class="text-body">WIDER Challenge 2018, 2019</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- End of Section -->
+          
+        </main>
+        <!-- End of Main Content -->
+
+
+        <!-- Footer -->
+        <footer class="footer_p text-white" style="background-image: url(./assets/img/footer-bg.jpg)">
+            <div class="container d-flex h-100">
+                <div class="row flex-grow-1">
+                    <div class="col-lg-4 pt-3 ext-l bg-dark text-center text-lg-left">
+                        <div class="d-flex flex-column h-100">
+                            <div class="pt-5 pt-lg-8 pb-4">
+                                <img src="assets/img/logo.png" alt="" width="100" class="mb-4" />
+                                <p class="mb-4 mt-3 fs--1"><br />
+                                    No.A307 Innovation center, Qingshuihe Campus <br />
+                                    University of Electronic Science and Technology of China<br />
+                                </p>
+        
+                                <p class="fs--1">
+                                <span class="text-white"><i class="zmdi zmdi-email zmdi-hc-fw mr-1"></i>juana.alian@gmail.com</span><br />
+                                <!-- <span class="text-white"><i class="zmdi zmdi-twitter zmdi-hc-fw mr-1"></i><a href="https://twitter.com/MMLabNTU" target="_blank" class="text-white">@MMLabNTU</a></span></p> -->
+                            </div>
+    
+                            <!-- <ul class="mt-4 mt-lg-auto mb-5 mb-lg-0 list-unstyled list-inline">
+                                <li class="mr-3 list-inline-item">
+                                    <a href="https://twitter.com/MMLabNTU" target="_blank">
+                                        <i class="zmdi zmdi-twitter text-white"></i>
+                                    </a>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+
+                    <div class="col d-flex flex-column mb-2 mt-3 pl-lg-7">
+                        <div class="row pt-5 pt-lg-8 pb-4 pb-lg-6">
+                            <div class="col-6 col-lg-7">
+                                <h6 class="mb-1 mb-lg-4 text-uppercase">Publications</h6>
+                                <ul class="pt-2 mb-5 fw-light list-unstyled">
+                                    <li class="my-1"><a href="publication_topic.html" class="text-white">By Topic</a></li>
+                                    <li class="my-1"><a href="publication_year.html" class="text-white">By Year</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <h6 class="mb-1 mb-lg-4 text-uppercase">About</h6>
+                                <ul class="pt-2 mb-5 fw-light list-unstyled">
+                                    <li class="my-1"><a href="research.html" class="text-white">Our Research</a></li>
+                                    <li class="my-1"><a href="team.html" class="text-white">Team</a></li>
+                                    <!-- <li class="my-1"><a href="careers.html" class="text-white">Join Us</a></li> -->
+                                </ul>
+                            </div>
+                            <!-- <div class="col-6 col-lg-3">
+                                <h6 class="mb-1 mb-lg-4 text-uppercase">Open Source</h6>
+                                <ul class="pt-2 mb-5 fw-light list-unstyled">
+                                    <li class="my-1"><a href="https://openmmlab.com/" target="_blank" class="text-white">OpenMMLab</a></li>
+                                    <li class="my-1"><a href="downloads.html" class="text-white">Code and Datasets</a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+
+                        <div class="mt-auto d-flex justify-content-between">
+                            <span class="fs--3 fs-lg--2">&copy; VLLab@UESTC, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+
+        <!-- Core Javascripts -->
+        <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+        <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- Vendor Javascripts -->
+        <script src="assets/vendor/rellax/rellax.min.js"></script>
+        <script src="assets/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+        <script src="assets/vendor/sticky-kit/dist/sticky-kit.min.js"></script>
+        <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/vendor/isotope-layout/dist/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/isotope-packery/packery-mode.pkgd.min.js"></script>
+        <script src="assets/vendor/aos/dist/aos.js"></script>
+
+        <!-- Theme Javascripts -->
+        <script src="assets/js/theme.js"></script>
+    </body>
+</html>
