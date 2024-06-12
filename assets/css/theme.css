@@ -3475,8 +3475,8 @@ fieldset:disabled a.btn
 .btn-primary
 {
     color: #fff;
-    border-color: #264bf1; 
-    background-color: #264bf1;
+    border-color: #4868f7; 
+    background-color: #4868f7;
 }
 .btn-primary:hover
 {
@@ -8704,7 +8704,7 @@ a.bg-blue:focus,
 button.bg-blue:hover,
 button.bg-blue:focus
 {
-    background-color: #264bf1 !important;
+    background-color: #4868f7 !important;
 }
 
 .bg-white
@@ -17773,7 +17773,7 @@ button.bg-blue:focus
 
 .text-primary
 {
-    color: #264bf1 !important;
+    color: #4868f7 !important;
 }
 
 a.text-primary:hover,
